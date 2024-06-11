@@ -13,6 +13,18 @@ html {
 a {
   text-decoration: none !important;
 }
+.divider {
+  height: 2px;
+  background: #e7e7e7;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.rounder_card {
+  padding: 10px;
+}
+
 .logo_wrapper {
   border: 1px solid var(--primary);
   font-size: 14px;
