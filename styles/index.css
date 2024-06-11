@@ -1,6 +1,6 @@
 :root {
-  --primary: #1f160d;
-  --lightprimary: #402f1d;
+  --primary: #1114c0;
+  --lightprimary: rgb(160, 156, 156);
 }
 * {
   font-family: "Montserrat", sans-serif;
@@ -12,12 +12,21 @@ html {
 }
 a {
   text-decoration: none !important;
-  color: var(--primary);
+}
+.logo_wrapper {
+  border: 1px solid var(--primary);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  letter-spacing: 5px;
+  background-color: var(--lightprimary);
+  color: white;
 }
 
 .nav_item {
   font-weight: bold;
   color: var(--primary);
+  font-size: 14px;
 }
 .flex_container {
   display: flex;
@@ -33,7 +42,7 @@ a {
 .profile_image {
   height: 400px;
   width: 400px;
-  background: blue;
+  flex-shrink: 0;
   border-radius: 50%;
   background: url("./../images/unnamed.jpg");
   background-size: cover;
@@ -49,4 +58,8 @@ a {
   color: white;
   font-weight: bolder;
   box-shadow: 5px 5px 5px 5px rgb(66, 64, 64);
+  transition: all 0.2s;
+}
+.primary_button:hover {
+  padding: 16px;
 }
